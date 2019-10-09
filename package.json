@@ -14,10 +14,10 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "homepage": "https://Nerfi.github.io/juanportfolio",
+    "homepage": "https://Nerfi.github.io",
     "eject": "react-scripts eject",
-    "predeploy": "npm run build",
-   "deploy": "gh-pages -b master -d build"
+    "predeploy": "yarn run build",
+    "deploy": "gh-pages -b master -d build"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -33,5 +33,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "webpack-cli": "^3.3.9"
   }
 }
