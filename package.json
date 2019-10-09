@@ -14,7 +14,7 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "homepage": "https://Nerfi.github.io",
+    "homepage": "https://Nerfi.github.io/juanfolio_2",
     "eject": "react-scripts eject",
     "predeploy": "yarn run build",
     "deploy": "gh-pages -b master -d build"
