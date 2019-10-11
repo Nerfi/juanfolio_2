@@ -17,7 +17,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "predeploy": "yarn run build",
-    "deploy": "gh-pages  -b master -d build"
+    "deploy": "webpack -p && gh-pages -d dist"
   },
   "eslintConfig": {
     "extends": "react-app"
