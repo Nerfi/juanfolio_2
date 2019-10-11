@@ -1,0 +1,172 @@
+
+
+Fri Oct 11 14:59:45 2019
+Command line: TestDisk
+
+TestDisk 7.0, Data Recovery Utility, April 2015
+Christophe GRENIER <grenier@cgsecurity.org>
+http://www.cgsecurity.org
+OS: Linux, kernel 4.15.0-64-generic (#73-Ubuntu SMP Thu Sep 12 13:16:13 UTC 2019) x86_64
+Compiler: GCC 7.2
+ext2fs lib: 1.44.1, ntfs lib: libntfs-3g, reiserfs lib: none, ewf lib: none, curses lib: ncurses 6.0
+/dev/sda: LBA, LBA48, DCO support
+/dev/sda: size       1465149168 sectors
+/dev/sda: user_max   1465149168 sectors
+/dev/sda: dco        1465149168 sectors
+Warning: can't get size for Disk /dev/mapper/control - 0 B - 0 sectors, sector size=512
+Hard disk list
+Disk /dev/sda - 750 GB / 698 GiB - CHS 91201 255 63, sector size=512 - Hitachi HTS547575A9E384, S/N:J2140020D5NRNA, FW:JE4OA50A
+
+Partition table type (auto): EFI GPT
+Disk /dev/sda - 750 GB / 698 GiB - Hitachi HTS547575A9E384
+Partition table type: EFI GPT
+
+Interface Advanced
+hdr_size=92
+hdr_lba_self=1
+hdr_lba_alt=1465149167 (expected 1465149167)
+hdr_lba_start=34
+hdr_lba_end=1465149134
+hdr_lba_table=2
+hdr_entries=128
+hdr_entsz=128
+check_part_gpt failed for partition
+ 3 P MS Reserved              1353728    1615871     262144 [Microsoft reserved partition]
+ 1 P Unknown                     2048     821247     819200 [Basic data partition]
+ 2 P EFI System                821248    1353727     532480 [EFI system partition]
+ 3 P MS Reserved              1353728    1615871     262144 [Microsoft reserved partition]
+ 4 P MS Data                  1615872  193628159  192012288 [Basic data partition]
+     NTFS, blocksize=4096, 98 GB / 91 GiB
+ 5 P Unknown                193628160  194553855     925696
+ 7 P Unknown                194553856 1419261951 1224708096
+ 8 P Linux Swap            1419261952 1430720511   11458560
+ 6 P MS Data               1430720512 1465147391   34426880 [Basic data partition]
+     NTFS, blocksize=4096, 17 GB / 16 GiB
+gpt_change_part_type
+Change partition type:
+ 8 P Linux Reserved        1419261952 1430720511   11458560
+Change partition type:
+ 8 P Unknown               1419261952 1430720511   11458560
+Partition table type (auto): EFI GPT
+Disk /dev/sda - 750 GB / 698 GiB - Hitachi HTS547575A9E384
+Partition table type: Intel
+
+Interface Advanced
+Geometry from i386 MBR: head=255 sector=63
+BAD_RS LBA=1 0
+check_part_i386 1 type EE: no test
+ 1 P EFI GPT                  0   0  2 91201  80 63 1465149167
+Change partition type:
+ 1 P EFI GPT                  0   0  2 91201  80 63 1465149167
+
+Analyse Disk /dev/sda - 750 GB / 698 GiB - CHS 91201 255 63
+Geometry from i386 MBR: head=255 sector=63
+BAD_RS LBA=1 0
+check_part_i386 1 type EE: no test
+Current partition structure:
+ 1 P EFI GPT                  0   0  2 91201  80 63 1465149167
+
+Bad relative sector.
+No partition is bootable
+
+search_part()
+Disk /dev/sda - 750 GB / 698 GiB - CHS 91201 255 63
+NTFS at 0/32/33
+filesystem size           819200
+sectors_per_cluster       8
+mft_lcn                   34133
+mftmirr_lcn               2
+clusters_per_mft_record   -10
+clusters_per_index_record 1
+     HPFS - NTFS              0  32 33    51  30 43     819200
+     NTFS, blocksize=4096, 419 MB / 400 MiB
+FAT32 at 51/30/44
+FAT1 : 7166-7678
+FAT2 : 7679-8191
+start_rootdir : 8192 root cluster : 2
+Data : 8192-532479
+sectors : 532480
+cluster_size : 8
+no_of_cluster : 65536 (2 - 65537)
+fat_length 513 calculated 513
+set_FAT_info: name from BS used
+
+FAT32 at 51/30/44
+     FAT32                   51  30 44    84  67 47     532480 [NO NAME]
+     FAT32, blocksize=4096, 272 MB / 260 MiB
+NTFS at 100/148/49
+filesystem size           192012288
+sectors_per_cluster       8
+mft_lcn                   786432
+mftmirr_lcn               2
+clusters_per_mft_record   -10
+clusters_per_index_record 1
+     HPFS - NTFS            100 148 49 12052 202 54  192012288
+     NTFS, blocksize=4096, 98 GB / 91 GiB
+NTFS at 12052/202/55
+filesystem size           925696
+sectors_per_cluster       8
+mft_lcn                   38570
+mftmirr_lcn               2
+clusters_per_mft_record   -10
+clusters_per_index_record 1
+     HPFS - NTFS          12052 202 55 12110 106 28     925696
+     NTFS, blocksize=4096, 473 MB / 452 MiB
+
+recover_EXT2: s_block_group_nr=0/4671, s_mnt_count=77/4294967295, s_blocks_per_group=32768, s_inodes_per_group=8192
+recover_EXT2: s_blocksize=4096
+recover_EXT2: s_blocks_count 153088512
+recover_EXT2: part_size 1224708096
+     Linux                12110 106 29 88344 247 31 1224708096
+     ext4 blocksize=4096 Large_file Sparse_SB Recover, 627 GB / 583 GiB
+     Linux Swap           88344 247 32 89058  59  9   11458544
+     SWAP2 version 1, pagesize=4096, 5866 MB / 5594 MiB
+NTFS at 89058/59/26
+filesystem size           34426880
+sectors_per_cluster       8
+mft_lcn                   786432
+mftmirr_lcn               2
+clusters_per_mft_record   -10
+clusters_per_index_record 1
+     HPFS - NTFS          89058  59 26 91201  52 51   34426880
+     NTFS, blocksize=4096, 17 GB / 16 GiB
+
+Results
+     HPFS - NTFS              0  32 33    51  30 43     819200
+     NTFS, blocksize=4096, 419 MB / 400 MiB
+     FAT32                   51  30 44    84  67 47     532480 [NO NAME]
+     FAT32, blocksize=4096, 272 MB / 260 MiB
+     HPFS - NTFS            100 148 49 12052 202 54  192012288
+     NTFS, blocksize=4096, 98 GB / 91 GiB
+     HPFS - NTFS          12052 202 55 12110 106 28     925696
+     NTFS, blocksize=4096, 473 MB / 452 MiB
+     Linux                12110 106 29 88344 247 31 1224708096
+     ext4 blocksize=4096 Large_file Sparse_SB Recover, 627 GB / 583 GiB
+     Linux Swap           88344 247 32 89058  59 25   11458560
+     SWAP2 version 1, pagesize=4096, 5866 MB / 5595 MiB
+     HPFS - NTFS          89058  59 26 91201  52 51   34426880
+     NTFS, blocksize=4096, 17 GB / 16 GiB
+
+Hint for advanced users. dmsetup may be used if you prefer to avoid to rewrite the partition table for the moment:
+echo "0 819200 linear /dev/sda 2048" | dmsetup create test0
+echo "0 532480 linear /dev/sda 821248" | dmsetup create test1
+echo "0 192012288 linear /dev/sda 1615872" | dmsetup create test2
+echo "0 925696 linear /dev/sda 193628160" | dmsetup create test3
+echo "0 1224708096 linear /dev/sda 194553856" | dmsetup create test4
+echo "0 11458560 linear /dev/sda 1419261952" | dmsetup create test5
+echo "0 34426880 linear /dev/sda 1430720512" | dmsetup create test6
+
+interface_write()
+ 
+No partition found or selected for recovery
+simulate write!
+
+write_mbr_i386: starting...
+write_all_log_i386: starting...
+No extended partition
+New options :
+ Dump : No
+ Align partition: Yes
+ Expert mode : No
+
+TestDisk exited normally.

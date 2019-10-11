@@ -3,10 +3,14 @@
   "version": "0.1.0",
   "private": true,
 <<<<<<< HEAD
+<<<<<<< HEAD
   "homepage": "./",
 =======
   "homepage": "https://Nerfi.github.io/",
 >>>>>>> 65f0b3ee1be7817aada5866e38baacbadde60d4d
+=======
+  "homepage": "https://Nerfi.github.io/",
+>>>>>>> 2373f5ab78e9ed1d531eb631ccba812864a6f03e
   "dependencies": {
     "gh-pages": "^2.1.1",
     "react": "^16.10.2",
@@ -25,7 +29,11 @@
 >>>>>>> 65f0b3ee1be7817aada5866e38baacbadde60d4d
     "eject": "react-scripts eject",
     "predeploy": "yarn run build",
+<<<<<<< HEAD
     "deploy": "webpack -p && gh-pages -d dist"
+=======
+    "deploy": "gh-pages -b master -d build"
+>>>>>>> 2373f5ab78e9ed1d531eb631ccba812864a6f03e
   },
   "eslintConfig": {
     "extends": "react-app"
