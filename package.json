@@ -2,7 +2,7 @@
   "name": "juanfolio_2",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://Nerfi.github.io/juanfolio_2",
+  "homepage": "./",
   "dependencies": {
     "gh-pages": "^2.1.1",
     "react": "^16.10.2",
