@@ -2,7 +2,11 @@
   "name": "juanfolio_2",
   "version": "0.1.0",
   "private": true,
+<<<<<<< HEAD
   "homepage": "./",
+=======
+  "homepage": "https://Nerfi.github.io/",
+>>>>>>> 65f0b3ee1be7817aada5866e38baacbadde60d4d
   "dependencies": {
     "gh-pages": "^2.1.1",
     "react": "^16.10.2",
@@ -15,6 +19,10 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
+<<<<<<< HEAD
+=======
+
+>>>>>>> 65f0b3ee1be7817aada5866e38baacbadde60d4d
     "eject": "react-scripts eject",
     "predeploy": "yarn run build",
     "deploy": "webpack -p && gh-pages -d dist"
